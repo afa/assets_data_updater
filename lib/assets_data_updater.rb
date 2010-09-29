@@ -14,5 +14,13 @@ class AssetsDataUpdater < Sinatra::Base
   post "/do-something/:great" do
     # something great could happen here
   end  
+
+  get "/:server/:object/*" do |server, object, path|
+   #path = params[:splat]
+   "s:#{server} o:#{object} p:#{path}"
+   #parse form, take file from
+   # exec paperclip
+   #return result
+  end
  
 end
