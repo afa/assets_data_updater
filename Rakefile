@@ -5,13 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "assets_data_updater"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{small daemon for updating nginx'ed paperclip data}
+    gem.description = %Q{see README}
     gem.email = "afa.alone@gmail.com"
     gem.homepage = "http://github.com/afa/assets_data_updater"
     gem.authors = ["afa"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "cucumber", ">= 0"
+    gem.add_dependency "thin"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
